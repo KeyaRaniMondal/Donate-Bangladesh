@@ -1,0 +1,10 @@
+
+.lexend-font{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
