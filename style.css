@@ -8,3 +8,18 @@ header{
     display: flex;
     justify-content: space-around;
 }
+
+.card{
+    width: 80%;
+    margin: 3% auto 3% auto;
+}
+
+.card-body{
+    width: 70%;
+}
+.input{
+    width: 100%;
+}
+.btn-don{
+    width: 100%;
+}
