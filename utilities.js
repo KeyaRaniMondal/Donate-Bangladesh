@@ -34,9 +34,11 @@ function checkValidity(amount, newdonate) {
         console.log(totalDonation)
         document.getElementById(newdonate).innerText = totalDonation.toFixed(2)
         document.getElementById('my_modal_5').showModal();
-
     }
 }
+
+
+
 
 
 

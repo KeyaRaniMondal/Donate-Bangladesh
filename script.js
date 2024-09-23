@@ -56,5 +56,15 @@ document.getElementById('btn-donate2').addEventListener('click', function (event
 })
 
 
+// Toggle between donation and history buttons
+
+const historyBtn=document.getElementById('btn-history');
+const donateBtn=document.getElementById('donate-history');
+historyBtn.addEventListener('click',function(){
+historyBtn.style.backgroundColor='#B4F461';
+donateBtn.classList.remove('bg-[#B4F461]');
+
+document.getElementById('all-card').classList.add('hidden')
+})
 
 
