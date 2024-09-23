@@ -19,6 +19,7 @@ document.getElementById('btn-donate').addEventListener('click', function (event)
     // check valid number and donate money
     checkValidity('amount','newdonate');
 
+
 })
 
 

@@ -30,6 +30,34 @@ function checkValidity(amount, newdonate) {
         const totalDonation = old_donation + d;
         console.log(totalDonation)
         document.getElementById(newdonate).innerText = totalDonation.toFixed(2)
+        if (document.getElementById('btn-donate'))
+            openDonationModal();
+        if (document.getElementById('btn-donate1'))
+            openDonationModal1();
+         if (document.getElementById('btn-donate2'))
+            openDonationModal2();
 
     }
 }
+
+// Function to open the modal
+function openDonationModal() {
+    document.getElementById('my_modal_5').showModal();
+    document.getElementById('btn-donate').addEventListener('click', function () {
+        document.getElementById('my_modal_5')
+    })
+}
+function openDonationModal1() {
+    document.getElementById('my_modal_5').showModal();
+    document.getElementById('btn-donate1').addEventListener('click', function () {
+        document.getElementById('my_modal_5')
+    })
+}
+function openDonationModal2() {
+    document.getElementById('my_modal_5').showModal();
+    document.getElementById('btn-donate2').addEventListener('click', function () {
+        document.getElementById('my_modal_5')
+    })
+}
+
+
