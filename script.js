@@ -48,11 +48,19 @@ document.getElementById('btn-donate2').addEventListener('click', function (event
     getDonationByID('donation2');
 
     // total amount
-    getTotalAmountByID('amount');
+   const Amount= getTotalAmountByID('amount');
 
     // check valid number and donate money
     checkValidity('amount','newdonate2');
 
+    const history=document.createElement("div");
+    history.className="bg-white p-3 rounded-md border-l-2 border-gray-500";
+    history.innerHTML=`
+        <p>${Amount.toFixed(2)}</p>
+    <p>Date:${new Date().toLocaleString()}</p>`;
+
+    const historyContainer=document.getElementById('history-list')
+    historyContainer.insertBefore(history,historyContainer.firstChild)
 })
 
 
@@ -65,6 +73,8 @@ historyBtn.style.backgroundColor='#B4F461';
 donateBtn.classList.remove('bg-[#B4F461]');
 
 document.getElementById('all-card').classList.add('hidden')
+   console.log(document.getElementById('history-list').value)
+
 })
 
 
