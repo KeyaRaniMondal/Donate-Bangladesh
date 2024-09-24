@@ -42,17 +42,32 @@
     <main class="bg-[#FFFFFF]">
         <div class="aboveCard flex gap-4 justify-center mt-28 fixed top-0 left-0 right-0 z-50 pt-10 pb-10">
             <div id="h1">
-                <button id="donate-history" class=" btn btn-active bg-[#B4F461]" >Donation</button>
+                <button id="donate-history" class=" btn btn-active bg-[#B4F461]">Donation</button>
             </div>
             <div id="h2">
-                <button id="btn-history" class="btn border-[#1111114D] bg-[#FFFFFF]">History</button>
+                <button id="btn-history" class="btn border-[#1111114D] bg-[#FFFFFF]"
+                    onclick="myFunction()">History</button>
+                <script>
+                    function myFunction() {
+                        const p = document.createElement('p');
+                        const date = document.createTextNode(Date());
+                        p.innerText = `${d} Taka is Donated for Bangladesh`;
+                        p.appendChild(date)
+                        //common function
+                        p.classList.add('text-center', 'mx-auto', 'mt-64');
+                       document.getElementById('history-list').appendChild(p);
+                        document.getElementById('btn-history').innerText
+                        document.getElementById('all-card').classList.add('hidden');
+                        document.getElementById('history-list').classList.remove('hidden');
+                    }
+                </script>
             </div>
         </div>
 
         <!-- Cards for donations -->
 
         <!-- Noakhali -->
-         <div id="all-card">
+        <div id="all-card" >
             <div class="card lg:card-side border-[#1111111A]  bg-[#FFFF] shadow-2xl mt-60 pt-2 pl-5">
                 <figure>
                     <img src="./assets/noakhali.png" alt="Album" />
@@ -69,20 +84,22 @@
                         </button>
                     </div>
                     <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
-                    <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation
-                        will help provide essential supplies and to those affected by this disaster. Every contribution, big
-                        or small, makes difference. Please join us in supporting the relief efforts and making a positive
+                    <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        donation
+                        will help provide essential supplies and to those affected by this disaster. Every contribution,
+                        big
+                        or small, makes difference. Please join us in supporting the relief efforts and making a
+                        positive
                         impact on the lives of those in need.</p>
                     <div>
                         <div class=" mb-5">
                             <input id="donation" type="text" placeholder="Write Donation Amount"
                                 class="input input-bordered " />
                         </div>
-                         <div>
-                            <button id="btn-donate" class=" btn-don btn btn-wide bg-[#B4F461] "
-                              >Donate Now </button> 
+                        <div>
+                            <button id="btn-donate" class=" btn-don btn btn-wide bg-[#B4F461] ">Donate Now </button>
                             <!-- Open the modal using ID.showModal() method -->
-                           <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                                 <div class="modal-box">
                                     <h1 class="text-3xl font-bold text-center">Congrates!</h1>
                                     <div class="flex justify-center">
@@ -93,12 +110,12 @@
                                     <div class="modal-action">
                                         <form method="dialog">
                                             <!-- if there is a button in form, it will close the modal -->
-                                             <button class="btn -ml-80">Close Conformation</button>
+                                            <button class="btn -ml-80">Close Conformation</button>
                                         </form>
                                     </div>
                                 </div>
                             </dialog>
-                        </div>       
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,7 +136,8 @@
                         </button>
                     </div>
                     <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
-                    <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss.
+                    <p> The recent floods in Feni have devastated local communities, leading to severe disruption and
+                        loss.
                         Your generous donation will help provide immediate aid, including food, clean water, and medical
                         supplies, to those affected by this calamity. Together, we can offer crucial support and help
                         rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real
@@ -130,10 +148,9 @@
                                 class="input input-bordered " />
                         </div>
                         <div>
-                            <button id="btn-donate1" class=" btn-don btn btn-wide bg-[#B4F461] "
-                               >Donate Now </button> 
+                            <button id="btn-donate1" class=" btn-don btn btn-wide bg-[#B4F461] ">Donate Now </button>
                             <!-- Open the modal using ID.showModal() method -->
-                           <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                                 <div class="modal-box">
                                     <h1 class="text-3xl font-bold text-center">Congrates!</h1>
                                     <div class="flex justify-center">
@@ -144,12 +161,12 @@
                                     <div class="modal-action">
                                         <form method="dialog">
                                             <!-- if there is a button in form, it will close the modal -->
-                                             <button class="btn -ml-80">Close Conformation</button>
+                                            <button class="btn -ml-80">Close Conformation</button>
                                         </form>
                                     </div>
                                 </div>
                             </dialog>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -171,8 +188,10 @@
                     </div>
                     <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
                     <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many
-                        individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary
-                        supplies to those affected. By contributing, you help ensure that injured individuals receive the
+                        individuals. Your support is crucial in providing medical assistance, rehabilitation, and
+                        necessary
+                        supplies to those affected. By contributing, you help ensure that injured individuals receive
+                        the
                         care and support they need during this challenging time. Every donation plays a vital role in
                         alleviating their suffering and aiding in their recovery. Please consider making a donation to
                         support these brave individuals in their time of need.</p>
@@ -182,10 +201,9 @@
                                 class="input input-bordered " />
                         </div>
                         <div>
-                            <button id="btn-donate2" class=" btn-don btn btn-wide bg-[#B4F461] "
-                               >Donate Now </button> 
+                            <button id="btn-donate2" class=" btn-don btn btn-wide bg-[#B4F461] ">Donate Now </button>
                             <!-- Open the modal using ID.showModal() method -->
-                           <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                                 <div class="modal-box">
                                     <h1 class="text-3xl font-bold text-center">Congrates!</h1>
                                     <div class="flex justify-center">
@@ -196,38 +214,23 @@
                                     <div class="modal-action">
                                         <form method="dialog">
                                             <!-- if there is a button in form, it will close the modal -->
-                                             <button class="btn -ml-80">Close Conformation</button>
+                                            <button class="btn -ml-80">Close Conformation</button>
                                         </form>
                                     </div>
                                 </div>
                             </dialog>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
-         </div>
+        </div>
 
     </main>
     <!-- <div id="transaction-section" class="hidden">
         <h3>Transaction History</h3> -->
-        <div id="history-list">
-            <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    const d = 1000; // Example value for d
-                    const p = document.createElement('p');
-                    p.innerText = `${d} Taka is Donated for Bangladesh`;
-        
-                    // Append the paragraph to the history-list
-                    const historyList = document.getElementById('history-list');
-                    if (historyList) {
-                        historyList.appendChild(p);
-                    } else {
-                        console.error('Element with id "history-list" not found.');
-                    }
-                });
-            </script>
-        </div>
-     <!-- </div> -->
+    <div id="history-list" class="hidden">
+    </div>
+    <!-- </div> -->
     <script src="script.js"></script>
     <script src="utilities.js"></script>
 </body>

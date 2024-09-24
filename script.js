@@ -53,14 +53,6 @@ document.getElementById('btn-donate2').addEventListener('click', function (event
     // check valid number and donate money
     checkValidity('amount','newdonate2');
 
-    // const history=document.createElement("div");
-    // history.className="bg-white p-3 rounded-md border-l-2 border-gray-500";
-    // history.innerHTML=`
-    //     <p>${Amount.toFixed(2)}</p>
-    // <p>Date:${new Date().toLocaleString()}</p>`;
-
-    // const historyContainer=document.getElementById('history-list')
-    // historyContainer.insertBefore(history,historyContainer.firstChild)
 })
 
 
@@ -73,19 +65,13 @@ historyBtn.addEventListener('click',function(){
 historyBtn.style.backgroundColor='#B4F461';
 donateBtn.classList.remove('bg-[#B4F461]');
 
-document.getElementById('all-card').classList.add('hidden');
-document.getElementById('history-list').classList.remove('hidden');
-
 })
 
 donateBtn.addEventListener('click',function(){
 donateBtn.style.backgroundColor='#B4F461';
 historyBtn.style.backgroundColor = '';
-
-
-document.getElementById('history-list').classList.add('hidden');
 document.getElementById('all-card').classList.remove('hidden');
-
+document.getElementById('history-list').classList.add('hidden');
 })
 
 
