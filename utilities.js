@@ -2,7 +2,6 @@
 let d, a;
 
 //Made function to recieve donation amount
-
 function getDonationByID(id) {
     d = parseFloat(document.getElementById(id).value);
     return d;
@@ -35,19 +34,8 @@ function checkValidity(amount, newdonate) {
         document.getElementById(newdonate).innerText = totalDonation.toFixed(2)
         document.getElementById('my_modal_5').showModal();
 
-        // // Add to history section
-// function myFunction(){
-//         const p=document.createElement('p');
-//         const date=document.getElementById('history-list').innerHTML=Date();
-//         p.innerText=`${d} Taka is Donated for Bangladesh`;
-//         console.log(p)
-// p.appendChild(date)
-//         //common function
-//         document.getElementById('history-list').appendChild(p);
-//     }
-
     }
-   
+
 }
 
 
