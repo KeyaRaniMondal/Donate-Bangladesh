@@ -206,10 +206,28 @@
                 </div>
             </div>
          </div>
- <div id="history-list">
 
- </div>
     </main>
+    <!-- <div id="transaction-section" class="hidden">
+        <h3>Transaction History</h3> -->
+        <div id="history-list">
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const d = 1000; // Example value for d
+                    const p = document.createElement('p');
+                    p.innerText = `${d} Taka is Donated for Bangladesh`;
+        
+                    // Append the paragraph to the history-list
+                    const historyList = document.getElementById('history-list');
+                    if (historyList) {
+                        historyList.appendChild(p);
+                    } else {
+                        console.error('Element with id "history-list" not found.');
+                    }
+                });
+            </script>
+        </div>
+     <!-- </div> -->
     <script src="script.js"></script>
     <script src="utilities.js"></script>
 </body>

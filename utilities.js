@@ -34,9 +34,28 @@ function checkValidity(amount, newdonate) {
         console.log(totalDonation)
         document.getElementById(newdonate).innerText = totalDonation.toFixed(2)
         document.getElementById('my_modal_5').showModal();
+
+        // Add to history section
+        // const p=document.createElement('p');
+        // p.innerText=`${d} Taka is Donated for Bangladesh`;
+        // console.log(p)
+
+        // //common function
+        // document.getElementById('history-list').appendChild(p);
     }
+   
 }
 
+
+// document.getElementById('btn-history').addEventListener('click', function() {
+//     const transactionSection = document.getElementById('transaction-section');
+//     // Check if the section is hidden
+//     if (transactionSection.style.display === 'none') {
+//         transactionSection.style.display = 'block';  // Show history
+//     } else {
+//         transactionSection.style.display = 'none';   // Hide history
+//     }
+// });
 
 
 
